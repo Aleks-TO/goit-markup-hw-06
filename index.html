@@ -72,7 +72,6 @@
             вашого бізнесу
           </h1>
           <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
-          <!-- <a href="">Замовити послугу</a> -->
         </div>
       </section>
       <!-- -----PREFERENCE----- -->
@@ -524,6 +523,21 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form" action="">
+          <div class="footer-input">
+          <p class="footer-input-text">Підпишіться на розсилку</p>
+          <div class="footer-input-wrapper">
+            <input type="email" class="footer-input-field" placeholder="E-mail" />
+            <div class="footer-btn-wrapper">
+              <button type="submit" class="footer-btn">
+                Підписатися<svg class="footer-input-icon" width="24px" height="24px">
+                  <use href="./images/icons/icons.svg#letter-icon"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </form>
+        </div>
       </div>
     </footer>
     <!-- -----MODAL WINDOW----- -->
@@ -534,6 +548,48 @@
             <use href="./images/icons/icons.svg#close-icon"></use>
           </svg>
         </button>
+        <form action="" class="modal-form">
+          <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="f-field">
+            <label class="f-label" for="name">Ім'я</label>
+            <div class="f-input-wrapper">
+              <input type="text" class="f-input" id="name">
+              <svg class="f-input-icon" width="18px" height="18px">
+                <use href="./images/icons/icons.svg#person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="phone">Телефон</label>
+            <div class="f-input-wrapper">
+              <input type="text" class="f-input" id="phone">
+              <svg class="f-input-icon" width="18px" height="18px">
+                <use href="./images/icons/icons.svg#phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="mail">Пошта</label>
+            <div class="f-input-wrapper">
+              <input type="text" class="f-input" id="mail">
+              <svg class="f-input-icon" width="18px" height="18px">
+                <use href="./images/icons/icons.svg#mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="f-field">
+              <div class="f-input-wrapper">
+                <textarea class="f-input-area" name="" id="textarea" cols="30" rows="10" placeholder="Введіть текст"></textarea>
+                <label class="f-label" for="textarea">Коментар</label>
+              </div>
+          </div>
+          <div class="f-licence">
+            <input class="f-checkbox" type="checkbox">
+            <span class="f-checkbox-text">Погоджуюся з розсилкою та приймаю <a class="f-checkbox-link" href="">Умови договору</a></span>
+          </div>
+          <button class="f-btn" type="submit">Відправити</button>
+
+        </form>
       </div>
     </div>
     <script src="./JS/modal.js"></script>
